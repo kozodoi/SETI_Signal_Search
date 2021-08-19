@@ -27,12 +27,6 @@ def get_train_old_off_file_path(image_id, CFG):
 def get_test_old_off_file_path(image_id, CFG):
     return CFG['data_path'] + 'test_old_off/{}/{}.npy'.format(image_id[0], image_id)
 
-# random sequences
-def randomly(seq):
-    shuffled = list(seq)
-    random.shuffle(shuffled)
-    return iter(shuffled)
-
 # device-aware printing
 def smart_print(expression, accelerator = None):
     if accelerator is None:
