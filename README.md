@@ -7,9 +7,9 @@ Top-7% solution to the [SETI Breakthrough Listen](https://www.kaggle.com/c/seti-
 
 ## Summary
 
-Estimating text complexity and readability is a crucial task for school teachers. Offering students text passages at the right level of challenge is important for facilitating a fast development of reading skills. The existing tools to estimate text complexity rely on weak proxies and heuristics, which results in a suboptimal accuracy. This project uses deep learning to predict the readability scores of text passages.
+Searching for extraterrestrial signals from deep space is one of the main tasks of The Breakthrough Listen team at the University of California, Berkeley. Current methods compare scans of the target stars with scans of other regions of sky to detect anomalous signals. However, standard detection techniques might miss signals with complex time or frequency structure, and those in regions of the spectrum with lots of interference.
 
-My solution is an ensemble of eight transformer models, including BERT, RoBERTa and others. All transformers are implemented in `PyTorch` and feature a custom regression head that uses a concatenated output of multiple hidden layers. The modeling pipeline implements text augmentations such as sentence order shuffle, backtranslation and injecting target noise. The table below summarizes the main architecture and training parameters. The solution places in the top-9% of the Kaggle competition leaderboard.
+This project uses deep learning to detect extraterrestrial signals in radio spectrograms. The modeling pipeline involves converting radio spectrograms into 2D images and employing computer vision models. My solution is a blend of two models: EfficientNet B7 and SWIN Transformer. Both models are implemented in `PyTorch`. The solution places in the top-7% of the Kaggle competition leaderboard.
 
 
 ## Project structure
